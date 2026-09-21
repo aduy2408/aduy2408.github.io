@@ -47,7 +47,7 @@
           <h2>Selected research work</h2>
         </div>
         <article class="research-entry">
-          <div class="entry-meta"><span>01</span><span>Object detection</span></div>
+          <div class="entry-meta"><span>01</span><span>Object detection</span><span>Accepted at EIDT 2026</span></div>
           <div class="entry-content">
             <h3>LMSCA-YOLO</h3>
             <p class="entry-subtitle">Lightweight Multi-Scale Compressed Attention for Tiny Varroa Mite Detection</p>
@@ -72,7 +72,7 @@
         </div>
 
         <article class="research-entry research-entry-second">
-          <div class="entry-meta"><span>02</span><span>Semantic segmentation</span></div>
+          <div class="entry-meta"><span>02</span><span>Semantic segmentation</span><span>Accepted at MIWAI 2026</span></div>
           <div class="entry-content">
             <h3>CLM-Net</h3>
             <p class="entry-subtitle">A Channel-Optimized Lightweight Hybrid Network for Varroa Mite Segmentation</p>
@@ -81,9 +81,33 @@
             <a class="plain-link" href="https://github.com/aduy2408/CLM_Net" target="_blank" rel="noreferrer">View implementation ↗</a>
           </div>
         </article>
+        <div class="figure-grid clm-figures">
+          <figure class="research-figure">
+            <img src="assets/clm-net-architecture.png" alt="CLM-Net encoder-decoder architecture with LNAB, LGB, feature pyramid fusion, and MbM blocks" loading="lazy">
+            <figcaption>Figure 2. CLM-Net encoder-decoder architecture.</figcaption>
+          </figure>
+          <figure class="research-figure">
+            <img src="assets/clm-net-efficiency.png" alt="CLM-Net parameter and GFLOPs comparison across architecture variants" loading="lazy">
+            <figcaption>Figure 3. Parameter and GFLOPs comparison across CLM-Net variants.</figcaption>
+          </figure>
+        </div>
+
+        <article class="research-entry research-entry-second">
+          <div class="entry-meta"><span>03</span><span>Medical image preprocessing</span><span>APWeb 2026</span></div>
+          <div class="entry-content">
+            <h3>DICOM Preprocessing for Lung Detection</h3>
+            <p class="entry-subtitle">Comparative preprocessing of chest X-ray data for object detection</p>
+            <p>This work studies DICOM preprocessing methods for chest X-ray detection, including raw min-max normalization, histogram equalization, percentile clipping, VOI LUT, adaptive percentile processing, and CLAHE. The pipeline evaluates single and combined representations with YOLOv8, Faster R-CNN, and RT-DETR.</p>
+            <a class="plain-link" href="https://github.com/aduy2408" target="_blank" rel="noreferrer">Research materials ↗</a>
+          </div>
+        </article>
         <figure class="research-figure large-figure">
-          <img src="assets/clm-net-qualitative.png" alt="CLM-Net qualitative segmentation comparison across image, ground truth, LM-Net, CLM-Net-128, and CLM-Net-192" loading="lazy">
-          <figcaption>Figure 2. CLM-Net qualitative comparison across model variants.</figcaption>
+          <img src="assets/dicom-preprocessing-pipeline.png" alt="DICOM preprocessing pipeline from dataset curation through detection experiments and comparative analysis" loading="lazy">
+          <figcaption>Figure 4. DICOM preprocessing and comparative detection pipeline.</figcaption>
+        </figure>
+        <figure class="research-figure large-figure">
+          <img src="assets/dicom-preprocessing-comparison.png" alt="Chest X-ray images after different DICOM preprocessing combinations" loading="lazy">
+          <figcaption>Figure 5. Example chest X-ray representations produced by different preprocessing combinations.</figcaption>
         </figure>
       </section>
 
@@ -93,7 +117,7 @@
           <h2>Research translated into systems</h2>
         </div>
         <div class="project-list">
-          <a class="project" href="https://github.com/aduy2408/gymfixer" target="_blank" rel="noreferrer"><span class="project-number">03</span><span><strong>GymFixer</strong><small>AI-assisted workout posture analysis with pose estimation, repetition counting, error grouping, and optional coaching.</small></span><span class="project-arrow">↗</span></a>
+          <a class="project" href="https://github.com/aduy2408/gymfixer" target="_blank" rel="noreferrer"><span class="project-number">06</span><span><strong>GymFixer</strong><small>AI-assisted workout posture analysis with pose estimation, repetition counting, error grouping, and optional coaching.</small></span><span class="project-arrow">↗</span></a>
           <a class="project" href="https://github.com/aduy2408/manhwa-machine-translator" target="_blank" rel="noreferrer"><span class="project-number">04</span><span><strong>Manhwa Machine Translator</strong><small>OCR, Korean text translation, scraping, library management, and asynchronous processing with PaddleOCR, Gemini, FastAPI, Celery, and Redis.</small></span><span class="project-arrow">↗</span></a>
           <a class="project" href="https://github.com/aduy2408/Text2Sign" target="_blank" rel="noreferrer"><span class="project-number">05</span><span><strong>Text2Sign</strong><small>Text-to-pose-to-FBX pipeline combining FastAPI, Redis, Blender retargeting, and a browser-based Three.js viewer.</small></span><span class="project-arrow">↗</span></a>
         </div>
