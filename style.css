@@ -47,6 +47,12 @@ h1 em, h2 em { color: var(--orange); font-style: normal; }
 .signal-strip div:last-child { border-right: 0; }
 .signal-strip strong { font-size: 20px; letter-spacing: -.05em; }
 .signal-strip span { color: var(--muted); font: 10px "DM Mono", monospace; text-transform: uppercase; }
+.figure-section { display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; padding: 32px 0 0; }
+.figure-card { min-width: 0; margin: 0; background: var(--panel); }
+.figure-card img { display: block; width: 100%; height: 250px; object-fit: cover; filter: saturate(.82) contrast(.96); }
+.figure-wide img { object-position: center 26%; }
+.figure-card figcaption { display: flex; justify-content: space-between; gap: 20px; padding: 12px 14px 14px; color: var(--muted); font: 9px "DM Mono", monospace; letter-spacing: .04em; text-transform: uppercase; }
+.figure-card figcaption span:last-child { text-align: right; }
 .section { padding: 140px 0; border-bottom: 1px solid var(--line); }
 .section-heading { min-width: 42%; }
 .section-heading-row { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
@@ -85,6 +91,10 @@ h2 { margin-bottom: 0; font-size: clamp(42px, 5.8vw, 76px); line-height: .98; le
   .hero-diagram { min-height: 280px; margin-top: 58px; }
   .signal-strip { grid-template-columns: repeat(2, 1fr); }
   .signal-strip div:nth-child(2) { border-right: 0; }
+  .figure-section { grid-template-columns: 1fr; padding-top: 20px; }
+  .figure-card img { height: 220px; }
+  .figure-card figcaption { display: block; line-height: 1.7; }
+  .figure-card figcaption span:last-child { display: block; text-align: left; }
   .research-section { display: block; }
   .research-body { padding-top: 45px; }
   .section { padding: 95px 0; }
