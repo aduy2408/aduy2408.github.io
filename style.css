@@ -46,10 +46,10 @@ h2 { margin: 0; font-size: clamp(31px, 4vw, 45px); line-height: 1.16; letter-spa
 .research-entry-second { padding-top: 70px; }
 .research-figure { margin: 0 0 40px; }
 .research-figure img { display: block; width: 100%; border: 1px solid var(--rule); background: #fff; }
-.large-figure img { max-height: 520px; object-fit: contain; }
+.large-figure img { max-height: 360px; object-fit: contain; }
 .research-figure figcaption { margin-top: 9px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
 .figure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 6px; }
-.figure-grid .research-figure img { height: 300px; object-fit: contain; }
+.figure-grid .research-figure img { height: 220px; object-fit: contain; }
 .projects-section { padding-bottom: 72px; }
 .project-list { border-top: 1px solid var(--rule); }
 .project { display: grid; grid-template-columns: 50px 1fr 30px; gap: 20px; align-items: start; padding: 21px 0 23px; border-bottom: 1px solid var(--rule); }
