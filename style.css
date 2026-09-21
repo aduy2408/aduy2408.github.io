@@ -51,6 +51,7 @@ h2 { margin: 0; font-size: clamp(31px, 4vw, 45px); line-height: 1.16; letter-spa
 .research-figure figcaption { margin-top: 9px; color: var(--muted); font: 12px/1.5 Arial, sans-serif; }
 .figure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 6px; }
 .figure-grid .research-figure img { height: 220px; object-fit: contain; }
+.lmsca-figures .research-figure img { height: 300px; }
 .projects-section { padding-bottom: 72px; }
 .project-list { border-top: 1px solid var(--rule); }
 .project { display: grid; grid-template-columns: 50px 1fr 30px; gap: 20px; align-items: start; padding: 21px 0 23px; border-bottom: 1px solid var(--rule); }
@@ -78,7 +79,7 @@ h2 { margin: 0; font-size: clamp(31px, 4vw, 45px); line-height: 1.16; letter-spa
   .research-entry, .interests-section { display: block; }
   .entry-meta { margin-bottom: 22px; }
   .figure-grid { grid-template-columns: 1fr; }
-  .figure-grid .research-figure img { height: auto; }
+  .figure-grid .research-figure img, .lmsca-figures .research-figure img { height: auto; }
   .interests-section .section-title { margin-bottom: 32px; }
   .site-footer { display: block; }
   .site-footer span, .site-footer a { display: block; margin-bottom: 7px; }
