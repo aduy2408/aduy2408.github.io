@@ -32,7 +32,7 @@ h1 { max-width: 690px; margin: 0 0 24px; font-size: clamp(42px, 6vw, 68px); line
 .portrait figcaption { margin-top: 9px; color: var(--muted); font: 12px/1.4 Arial, sans-serif; }
 .notice { margin: 0 0 76px; padding: 17px 20px; border-left: 3px solid var(--accent); background: var(--soft); color: #000; font-size: 16px; }
 .notice strong { color: var(--navy); }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin: -30px 0 76px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--rule); }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin: -30px 0 76px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--rule); }
 .stats div { display: flex; flex-direction: column; gap: 3px; padding: 18px 16px; background: var(--paper); }
 .stats strong { color: var(--navy); font: 700 29px/1 Arial, sans-serif; }
 .stats span { color: var(--muted); font: 12px/1.4 Arial, sans-serif; text-transform: uppercase; }
