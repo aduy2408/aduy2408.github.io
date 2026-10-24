@@ -23,10 +23,10 @@
     <main>
       <section id="about" class="intro">
         <div class="intro-copy">
-          <p class="kicker">AI / ML researcher and developer</p>
-          <h1>Computer vision and efficient deep learning.</h1>
-          <p class="lead">I am Duy Le, a researcher and developer based in Da Nang, Vietnam. My work focuses on tiny object detection, semantic segmentation, and lightweight neural networks.</p>
-          <p class="lead">I work directly with research code in PyTorch, modifying model internals, feature representation, attention modules, detection heads, loss functions, and evaluation pipelines.</p>
+          <p class="kicker">AI engineer and computer-vision researcher</p>
+          <h1>Computer vision, efficient deep learning, and practical AI systems.</h1>
+          <p class="lead">I am Duy Le, an AI Engineer and Artificial Intelligence undergraduate based in Da Nang, Vietnam. My work spans tiny object detection, semantic segmentation, medical imaging, OCR, and efficient deep learning.</p>
+          <p class="lead">I build and deploy research-driven systems with PyTorch, TensorRT, ONNX Runtime, FastAPI, and modern LLM tooling.</p>
           <div class="links">
             <a class="link-button" href="https://github.com/aduy2408" target="_blank" rel="noreferrer">GitHub profile ↗</a>
             <a class="plain-link" href="mailto:aduy2408@users.noreply.github.com">Email</a>
@@ -39,7 +39,14 @@
       </section>
 
       <section class="notice">
-        <strong>Current focus.</strong> Lightweight computer-vision models for small objects.
+        <strong>Current focus.</strong> Lightweight computer-vision models, medical-image analysis, and production-ready AI inference.
+      </section>
+
+      <section class="stats" aria-label="Highlights">
+        <div><strong>4</strong><span>research papers</span></div>
+        <div><strong>8+</strong><span>months industry experience</span></div>
+        <div><strong>60%</strong><span>latency reduction</span></div>
+        <div><strong>10</strong><span>pages/s OCR throughput</span></div>
       </section>
 
       <section id="experience" class="section experience-section">
@@ -52,6 +59,7 @@
           <div class="entry-content">
             <h3>AI Engineer Intern</h3>
             <p class="entry-subtitle">FPT Information System (FPT IS / FIS)</p>
+            <p>Built a document-processing pipeline with YOLO layout detection, PaddleOCR, fine-tuned VietOCR at 5% CER, and Qwen-32B served through vLLM on an NVIDIA H100. Optimized inference with ONNX Runtime and TensorRT, reducing end-to-end latency by approximately 60% and reaching 10 pages/s.</p>
           </div>
         </div>
       </section>
@@ -59,15 +67,15 @@
       <section id="research" class="section">
         <div class="section-title">
           <p class="kicker">Research</p>
-          <h2>Accepted work</h2>
+          <h2>Selected publications</h2>
         </div>
         <article class="research-entry">
-          <div class="entry-meta"><span>01</span><span>Object detection</span><span class="venue">Accepted at EIDT 2026</span></div>
+          <div class="entry-meta"><span>01</span><span>Object detection</span><span class="venue">EIDT 2026 · Second author · Accepted</span></div>
           <div class="entry-content">
             <h3>LMSCA-YOLO</h3>
             <p class="entry-subtitle">Lightweight Multi-Scale Compressed Attention for Tiny Varroa Mite Detection</p>
-            <p>A lightweight detector designed for tiny Varroa mites in bee imagery. The method combines IRDCB multi-scale fusion, Scale-Aligned Gated Residual Injection, deformable refinement, and Key-Value Compressed Attention.</p>
-            <div class="metrics"><span><strong>91.27%</strong> mAP50</span><span><strong>35.66%</strong> mAP50-95</span><span><strong>2.23M</strong> parameters</span><span><strong>9.31</strong> GFLOPs</span></div>
+            <p>A lightweight detector designed for tiny Varroa mites in bee imagery. The method uses Key-Value Compressed Attention to retain full-resolution queries while compressing keys and values.</p>
+            <div class="metrics"><span><strong>35.66%</strong> mAP50-95</span><span><strong>+3.04</strong> points vs. YOLOv8-n</span><span><strong>2.23M</strong> parameters</span></div>
             <a class="plain-link" href="https://github.com/aduy2408/LMSCA-YOLO" target="_blank" rel="noreferrer">View implementation ↗</a>
           </div>
         </article>
@@ -83,12 +91,13 @@
         </div>
 
         <article class="research-entry research-entry-second">
-          <div class="entry-meta"><span>02</span><span>Semantic segmentation</span><span class="venue">Accepted at MIWAI 2026</span></div>
+          <div class="entry-meta"><span>02</span><span>Semantic segmentation</span><span class="venue">MIWAI 2026 · First author · DOI</span></div>
           <div class="entry-content">
             <h3>CLM-Net</h3>
             <p class="entry-subtitle">A Channel-Optimized Lightweight Hybrid Network for Varroa Mite Segmentation</p>
             <p>CLM-Net replaces expensive full-channel attention with partial neighborhood attention and a lightweight global bottleneck. The project studies how to preserve useful context while keeping the model small.</p>
             <div class="metrics"><span><strong>70.32%</strong> Dice</span><span><strong>54.24%</strong> IoU</span><span><strong>1.71M</strong> parameters</span><span><strong>8.005</strong> GFLOPs</span></div>
+            <a class="plain-link" href="https://doi.org/10.1007/978-981-92-6513-8_26" target="_blank" rel="noreferrer">Read paper ↗</a>
             <a class="plain-link" href="https://github.com/aduy2408/CLM_Net" target="_blank" rel="noreferrer">View implementation ↗</a>
           </div>
         </article>
@@ -104,18 +113,29 @@
         </div>
 
         <article class="research-entry research-entry-second">
-          <div class="entry-meta"><span>03</span><span>Medical image preprocessing</span><span class="venue">Accepted at APWeb 2026</span></div>
+          <div class="entry-meta"><span>03</span><span>Medical image preprocessing</span><span class="venue">APWeb 2026 · Second author · DOI</span></div>
           <div class="entry-content">
             <h3>DICOM Preprocessing for Lung Detection</h3>
             <p class="entry-subtitle">Comparative preprocessing of chest X-ray data for object detection</p>
             <p>This work studies DICOM preprocessing methods for chest X-ray detection, including raw min-max normalization, histogram equalization, percentile clipping, VOI LUT, adaptive percentile processing, and CLAHE. The pipeline evaluates single and combined representations with YOLOv8, Faster R-CNN, and RT-DETR.</p>
-            <a class="plain-link" href="https://github.com/aduy2408" target="_blank" rel="noreferrer">Research materials ↗</a>
+            <div class="metrics"><span><strong>+7.47</strong> mAP50 points for Faster R-CNN</span><span><strong>+0.77</strong> points for RT-DETR</span></div>
+            <a class="plain-link" href="https://doi.org/10.1007/978-981-92-5699-0_29" target="_blank" rel="noreferrer">Read paper ↗</a>
           </div>
         </article>
         <figure class="research-figure large-figure">
           <img src="assets/dicom-preprocessing-pipeline.png" alt="DICOM preprocessing pipeline from dataset curation through detection experiments and comparative analysis" loading="lazy">
           <figcaption>Figure 4. DICOM preprocessing and comparative detection pipeline.</figcaption>
         </figure>
+
+        <article class="research-entry research-entry-second">
+          <div class="entry-meta"><span>04</span><span>Tiny object detection</span><span class="venue">CSoNet 2026 · Second author · Accepted</span></div>
+          <div class="entry-content">
+            <h3>MSS-YOLO</h3>
+            <p class="entry-subtitle">Multi-Scale Semantic and Attention-Guided Feature Enhancement for Tiny Object Detection</p>
+            <p>A lightweight detector with multi-scale semantic and attention-guided feature enhancement for tiny objects across Varroa and LEVIR-Ship datasets.</p>
+            <div class="metrics"><span><strong>35.75%</strong> mAP50-95 on Varroa</span><span><strong>33.97%</strong> mAP50-95 on LEVIR-Ship</span><span><strong>2.05M</strong> parameters</span></div>
+          </div>
+        </article>
       </section>
 
       <section id="projects" class="section projects-section">
@@ -124,9 +144,8 @@
           <h2>Research translated into systems</h2>
         </div>
         <div class="project-list">
-          <a class="project" href="https://github.com/aduy2408/gymfixer" target="_blank" rel="noreferrer"><span class="project-number">04</span><span><strong>GymFixer</strong><small>AI-assisted workout posture analysis with pose estimation, repetition counting, error grouping, and optional coaching.</small></span><span class="project-arrow">↗</span></a>
-          <a class="project" href="https://github.com/aduy2408/manhwa-machine-translator" target="_blank" rel="noreferrer"><span class="project-number">05</span><span><strong>Manhwa Machine Translator</strong><small>OCR, Korean text translation, scraping, library management, and asynchronous processing with PaddleOCR, Gemini, FastAPI, Celery, and Redis.</small></span><span class="project-arrow">↗</span></a>
-          <a class="project" href="https://github.com/aduy2408/Text2Sign" target="_blank" rel="noreferrer"><span class="project-number">06</span><span><strong>Text2Sign</strong><small>Text-to-pose-to-FBX pipeline combining FastAPI, Redis, Blender retargeting, and a browser-based Three.js viewer.</small></span><span class="project-arrow">↗</span></a>
+          <a class="project" href="https://github.com/aduy2408/Text2Sign" target="_blank" rel="noreferrer"><span class="project-number">01</span><span><strong>Text2Sign</strong><small>Vietnamese text-to-gloss translation and 3D sign-language animation with 300+ videos, SMPLer-X, Blender, FastAPI, Celery, Redis, and Docker. Generates 5–8-word sentences in approximately 1 second on CPU.</small></span><span class="project-arrow">↗</span></a>
+          <a class="project" href="https://github.com/aduy2408/VoltAgent" target="_blank" rel="noreferrer"><span class="project-number">02</span><span><strong>VoltAgent</strong><small>Multimodal electrical-engineering assistant combining RAG-based technical Q&amp;A, electrical calculations, and YOLO circuit-component detection. Reached 95.03% Recall@10 and accelerated inference 2.31× with TensorRT FP16.</small></span><span class="project-arrow">↗</span></a>
         </div>
       </section>
 
@@ -136,7 +155,7 @@
           <li>Tiny object detection and localization quality</li>
           <li>Lightweight CNN and CNN-Transformer architectures</li>
           <li>Attention, feature enhancement, and multi-scale fusion</li>
-          <li>Confidence calibration, ranking, and assignment behavior</li>
+          <li>Medical image analysis and DICOM preprocessing</li>
           <li>Controlled ablations and reproducible PyTorch experiments</li>
         </ul>
       </section>

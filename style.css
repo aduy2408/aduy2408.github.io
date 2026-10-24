@@ -32,6 +32,10 @@ h1 { max-width: 690px; margin: 0 0 24px; font-size: clamp(42px, 6vw, 68px); line
 .portrait figcaption { margin-top: 9px; color: var(--muted); font: 12px/1.4 Arial, sans-serif; }
 .notice { margin: 0 0 76px; padding: 17px 20px; border-left: 3px solid var(--accent); background: var(--soft); color: #000; font-size: 16px; }
 .notice strong { color: var(--navy); }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin: -30px 0 76px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--rule); }
+.stats div { display: flex; flex-direction: column; gap: 3px; padding: 18px 16px; background: var(--paper); }
+.stats strong { color: var(--navy); font: 700 29px/1 Arial, sans-serif; }
+.stats span { color: var(--muted); font: 12px/1.4 Arial, sans-serif; text-transform: uppercase; }
 .section { padding: 68px 0 82px; border-top: 1px solid var(--rule); }
 .section-title { margin-bottom: 42px; }
 h2 { margin: 0; font-size: clamp(31px, 4vw, 45px); line-height: 1.16; letter-spacing: -.035em; }
@@ -81,6 +85,7 @@ h2 { margin: 0; font-size: clamp(31px, 4vw, 45px); line-height: 1.16; letter-spa
   h1 { font-size: 44px; }
   .lead { font-size: 16px; }
   .notice { margin-bottom: 50px; }
+  .stats { grid-template-columns: repeat(2, 1fr); margin-top: -14px; margin-bottom: 50px; }
   .research-entry, .interests-section { display: block; }
   .entry-meta { margin-bottom: 22px; }
   .figure-grid { grid-template-columns: 1fr; }
